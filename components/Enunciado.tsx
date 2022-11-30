@@ -1,16 +1,13 @@
 import styles from '../styles/Enunciado.module.css'
 
 interface EnunciadoProps {
-    texto:string
+    texto: string
 }
 
-
-export default function Enunciado(props){
-    return(
+export default function Enunciado(props: EnunciadoProps) {
+    return (
         <div className={styles.enunciado}>
-            <span className={styles.texto}>
-                {props.texto}</span>
-
-            </div>
+            <span className={styles.texto}>{props.texto}</span>
+        </div>
     )
 }
